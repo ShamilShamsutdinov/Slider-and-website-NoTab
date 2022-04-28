@@ -1,0 +1,151 @@
+@font-face {
+  font-family: 'Avenir-Heavy';
+  src: url('../fonts/Avenir-Heavy.woff');
+  src: local('Avenir-Heavy'),
+    url('../fonts/Avenir-Heavy.woff2') format('woff2'),
+    url('../fonts/Avenir-Heavy.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Avenir-Medium';
+  src: url('../fonts/Avenir-Medium.woff');
+  src: local('Avenir-Medium'),
+    url('../fonts/Avenir-Medium.woff2') format('woff2'),
+    url('../fonts/Avenir-Medium.woff') format('woff');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Manrope-Bold';
+  src: url('../fonts/Manrope-Bold.woff');
+  src: local('Manrope-Bold'),
+    url('../fonts/Manrope-Bold.woff2') format('woff2'),
+    url('../fonts/Manrope-Bold.woff') format('woff');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('../fonts/Montserrat-Bold.woff');
+  src: local('Montserrat-Bold'),
+    url('../fonts/Montserrat-Bold.woff2') format('woff2'),
+    url('../fonts/Montserrat-Bold.woff') format('woff');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto-Sans';
+  src: url('../fonts/NotoSans.woff');
+  src: local('Noto-Sans'),
+    url('../fonts/NotoSans.woff2') format('woff2'),
+    url('../fonts/NotoSans.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Noto-Sans-Bold';
+  src: url("../fonts/NotoSans-Bold.woff");
+  src: local("Noto-Sans"), url("../fonts/NotoSans-Bold.woff2") format("woff2"), url("../fonts/NotoSans-Bold.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'roboto-regular';
+  src: url('./fonts/roboto-regular.woff');
+  src: local('roboto-regular'),
+    url('../fonts/roboto-regular.woff2') format('woff2'),
+    url('../fonts/roboto-regular.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'roboto-medium';
+  src: url('../fonts/roboto-medium.woff');
+  src: local('roboto-medium'),
+    url('../fonts/roboto-medium.woff2') format('woff2'),
+    url('../fonts/roboto-medium.woff') format('woff');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Roboto-bold';
+  src: url('../fonts/Roboto-Bold.woff');
+  src: local('Roboto-bold'),
+    url('../fonts/Roboto-Bold.woff2') format('woff2'),
+    url('../fonts/Roboto-Bold.woff') format('woff');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SFProText-Regular';
+  src: url('../fonts/SFProText-Regular.woff');
+  src: local('SFProText-Regular'),
+    url('../fonts/SFProText-Regular.woff2') format('woff2'),
+    url('../fonts/SFProText-Regular.woff') format('woff');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SFProText-Medium';
+  src: url('../fonts/SFProText-Medium.woff');
+  src: local('SFProText-Medium'),
+    url('../fonts/SFProText-Medium.woff2') format('woff2'),
+    url('../fonts/SFProText-Medium.woff') format('woff');
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SFProText-Semibold';
+  src: url('../fonts/SFProText-Semibold.woff');
+  src: local('SFProText-Semibold'),
+    url('../fonts/SFProText-Semibold.woff2') format('woff2'),
+    url('../fonts/SFProText-Semibold.woff') format('woff');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SFProDisplay-Semibold';
+  src: url('../fonts/SFProDisplay-Semibold.woff');
+  src: local('SFProDisplay-Semibold'),
+    url('../fonts/SFProDisplay-Semibold.woff2') format('woff2'),
+    url('../fonts/SFProDisplay-Semibold.woff') format('woff');
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'SFProDisplay-Bold';
+  src: url('../fonts/SFProDisplay-Bold.woff');
+  src: local('SFProDisplay-Bold'),
+    url('../fonts/SFProDisplay-Bold.woff2') format('woff2'),
+    url('../fonts/SFProDisplay-Bold.woff') format('woff');
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}

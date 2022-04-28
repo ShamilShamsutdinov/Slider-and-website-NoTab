@@ -1,0 +1,383 @@
+.platform {
+  margin-bottom: 247px;
+
+  &__content {
+    display: flex;
+    padding: 14px 62px 0px 0px;
+    margin-bottom: 15px;
+
+    &_left {
+      padding: 125px 100px 0px 0px;
+    }
+
+    &_right {
+      max-width: 700px;
+    }
+  }
+
+  &__title {
+    @include fonts('Montserrat-Bold', 64px, 70px, 700, $white);
+    margin: 0 0 89px 0px;
+  }
+
+  &__block_text {
+    max-width: 470px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 261px;
+  }
+
+  &__subtitle {
+    @include fonts('Montserrat-Bold', 35px, 70px, 700, $white);
+  }
+
+  &__blur {
+    background-size: cover;
+    position: absolute;
+    width: 132px;
+    height: 193px;
+    top: 469px;
+    left: 332px;
+
+    &::after {
+      content: "";
+      background: rgba(96, 92, 234, 0.5);
+      background-size: cover;
+      filter: blur(50px);
+      position: absolute;
+      left: 1px;
+      top: 2px;
+      right: 6px;
+      bottom: 63px;
+      z-index: 1;
+    }
+  }
+
+  &__text_img {
+    background-image: url(../images/Line1.svg);
+    background-repeat: no-repeat;
+    position: relative;
+    width: 200px;
+    height: 128px;
+    overflow: hidden;
+    z-index: 2;
+  }
+
+  &__text {
+    position: relative;
+    @include fonts('Noto-Sans', 20px, 27px, 400, $white);
+    margin-left: 28px;
+    margin-bottom: 5px;
+    z-index: 3;
+  }
+
+  &__blur_iphone {
+    background: url(../images/blurpink.svg);
+    background-repeat: no-repeat;
+    filter: blur(75px);
+    position: absolute;
+    width: 691px;
+    height: 783px;
+    top: 31px;
+    left: 973px;
+  }
+
+  &__iphone {
+    position: relative;
+    z-index: 2;
+    margin: 0 0 84px 11px;
+
+  }
+
+  &__social_mobile {
+    display: none;
+  }
+
+
+  &__social {
+    position: relative;
+    display: flex;
+
+    &_link:not(:last-child) {
+      margin-right: 28px;
+    }
+
+    &_link:hover {
+      background-color: $hover;
+      border-radius: 10px;
+    }
+
+  }
+
+  @media(max-width: 1100px) {
+    &__blur {
+      top: 723px;
+      left: 69px;
+
+    }
+
+    &__blur_iphone {
+      left: 500px;
+    }
+  }
+
+  @media(max-width: 900px) {
+    &__subtitle {
+      display: none;
+    }
+
+    &__social_img {
+      display: none;
+    }
+
+    &__social_mobile {
+      display: block;
+      text-align: center;
+      margin-bottom: 70px;
+    }
+
+    &__social_img_appStore:hover {
+      background-color: $hover;
+      border-radius: 10px;
+    }
+
+    &__social_img_google:hover {
+      background-color: $hover;
+      border-radius: 10px;
+    }
+
+    &__social_img_appStore {
+      margin-right: 23px;
+
+    }
+
+    &__subtitle_mobile {
+      @include fonts('Montserrat-Bold', 24px, 29px, 700, $white);
+      margin-bottom: 33px;
+    }
+  }
+
+  @media(max-width:480px) {
+    & {
+      margin-bottom: 60px;
+
+    }
+
+    &__title {
+      position: relative;
+      @include fonts('Montserrat-Bold', 35px, 40px, 700, $white);
+      margin: 0 0 22px 0px;
+      z-index: 6;
+    }
+
+    &__content {
+      padding: 0px;
+    }
+
+    &__blur {
+      display: none;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    &__blur_iphone {
+      position: absolute;
+      background: url(../images/platformMobileBlur.svg);
+      background-repeat: no-repeat;
+      filter: blur(90px);
+      position: absolute;
+      width: 363px;
+      height: 430px;
+      top: 111px;
+      left: 72px;
+      z-index: 1;
+    }
+
+    &__text_img {
+      display: none;
+    }
+
+    &__iphone {
+      position: relative;
+      z-index: 2;
+      margin: 0 0 41px 0px;
+
+    }
+
+    &__content_left {
+      padding: 36px 0px 0px 0px;
+      margin-right: 15px;
+    }
+
+    &__block_text {
+      width: 240px;
+      margin-bottom: 0px;
+    }
+
+    &__text {
+      @include fonts('Noto-Sans', 16px, 22px, 400, $white);
+      margin: 0px 0px 0px 0px;
+
+    }
+
+    &__subtitle {
+      display: none;
+    }
+
+    &__subtitle_mobile {
+      @include fonts('Montserrat-Bold', 24px, 29px, 700, $white);
+      margin-bottom: 33px;
+    }
+
+    &__social_mobile {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      margin-bottom: 70px;
+    }
+
+    &__social_block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__social_img_appStore {
+      margin: 0px 0px 23px 0px;
+
+
+    }
+
+    &__social_img {
+      display: none;
+    }
+
+
+
+  }
+}
+
+.cookie {
+  background: #212834;
+  margin-bottom: 61px;
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 21px 23px 21px 100px;
+
+    &_text {
+      @include fonts('Noto-Sans', 14px, 19px, 400, $white);
+    }
+
+    &_button {
+      @include fonts('Noto-Sans', 14px, 19px, 400, $white);
+      padding: 15px 56px 15px 58px;
+      background: rgba(255, 255, 255, 0.1);
+      border: 0.5px solid #FFFFFF;
+      border-radius: 6px;
+
+      &:hover {
+        background-color: $hover;
+        border-radius: 10px;
+      }
+    }
+
+  }
+
+  @media(max-width: 480px) {
+
+    & {
+      display: none;
+    }
+  }
+}
+
+.connection {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0px 76px 0px 74px;
+
+  &__card {
+    max-width: 47%;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 20px;
+
+
+    &_one {
+      padding: 62px 40px 60px 55px;
+    }
+
+    &_two {
+      padding: 98px 168px 66px 52px;
+    }
+
+    &_text {
+      @include fonts('Noto-Sans-Bold', 30px, 41px, 700, $white);
+      margin-bottom: 30px;
+    }
+
+    &_link {
+      @include fonts('Noto-Sans', 24px, 33px, 400, $white);
+      text-decoration-style: solid;
+    }
+
+  }
+
+  @media(max-width: 900px) {
+    & {
+      flex-direction: column;
+      margin: 0px;
+    }
+
+    &__card {
+      max-width: 100%;
+
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+    }
+  }
+
+  @media(max-width: 480px) {
+    & {
+      flex-direction: column;
+      align-items: center;
+      margin: 0px;
+    }
+
+    &__card {
+      max-width: 345px;
+      border: 2px solid rgba(255, 255, 255, 0.5);
+      border-radius: 20px;
+
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+
+      &_one {
+        padding: 35px 26px 38px 31px;
+
+      }
+
+      &_two {
+        padding: 37px 83px 39px 32px;
+      }
+    }
+
+    &__card_text {
+      @include fonts('Noto-Sans-Bold', 24px, 33px, 700, $white);
+    }
+
+    &__card_link {
+      @include fonts('Noto-Sans', 18px, 25px, 400, $white);
+    }
+  }
+
+}

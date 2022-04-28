@@ -1,0 +1,219 @@
+.touch {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 151px;
+
+  .container__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__blur_top {
+    position: absolute;
+    background-image: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%), url(../images/touchBlurTop.svg);
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 250px;
+    opacity: 0.3;
+    filter: blur(100px);
+    transform: rotate(6deg);
+    @include position(-46px, 303px, 0px, 0px);
+    z-index: 1;
+  }
+
+  &__blur_middle {
+    position: absolute;
+    background-image: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%), url(../images/touchBlurMiddle.svg);
+    background-repeat: no-repeat;
+    width: 238px;
+    height: 340px;
+    opacity: 0.3;
+    filter: blur(100px);
+    transform: rotate(6deg);
+    @include position(761px, 1218px, 0px, 0px);
+  }
+
+  &__text {
+    max-width: 580px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 11px 0px 0px 0px;
+    margin-bottom: 83px;
+
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 91px;
+  }
+
+  &__form_input {
+    width: 821px;
+    border: 1px solid #5C5C5C;
+    border-radius: 10px;
+    padding: 33px 0px 32px 23px;
+    margin-bottom: 23px;
+
+    &:invalid:required {
+      border: 2px solid #FF0000;
+    }
+  }
+
+  &__form_input::placeholder {
+    @include fonts('Noto-Sans', 18px, 25px, 400, #BFBFBF);
+  }
+
+  &__input_city {
+    width: 397px;
+  }
+
+  &__input_city:first-child {
+    margin-right: 21px;
+  }
+
+  &__input_message {
+    margin-bottom: 60px;
+    padding-bottom: 148px;
+  }
+
+  &__form_button {
+    @include fonts('Montserrat-Bold', 24px, 29px, 700, $white);
+    max-width: 398px;
+    background: $blackbg;
+    border: 1px solid $white;
+    border-radius: 10px;
+    padding: 22px 167px 27px 167px;
+
+    &:hover {
+      background-color: $hover;
+    }
+
+  }
+
+  &__social_title {
+    @include fonts('Noto-Sans-Bold', 24px, 33px, 700, $white);
+    margin-bottom: 32px;
+  }
+
+  &__social_img:hover {
+    background-color: $hover;
+    border-radius: 10px;
+  }
+
+  &__social_link:not(:last-child) {
+    margin-right: 56px;
+  }
+
+  @media(max-width:768px) {
+    &__text {
+      max-width: 651px;
+
+    }
+
+    &__form_input {
+      max-width: 670px;
+    }
+
+    &__input_city {
+      width: 321px;
+    }
+  }
+
+
+  @media(max-width:480px) {
+    & {
+      margin-bottom: 62px;
+    }
+
+    &__form {
+      margin-bottom: 74px;
+    }
+
+    &__form_input {
+      width: 345px;
+      border: 1px solid #5C5C5C;
+      border-radius: 10px;
+      padding: 22px 0px 17px 10px;
+      margin-bottom: 16px;
+      z-index: 6;
+    }
+
+    &__form_input::placeholder {
+      @include fonts('Noto-Sans', 16px, 22px, 400, #BFBFBF);
+    }
+
+    &__form_city {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__input_city:first-child {
+      margin-right: 0px;
+    }
+
+    &__input_message {
+      margin-bottom: 40px;
+      padding-bottom: 101px;
+    }
+
+
+    &__text {
+      margin-bottom: 50px;
+    }
+
+    &__form_button {
+      max-width: 344px;
+      padding: 22px 138px 25px 141px;
+
+    }
+
+    &__social_title {
+      letter-spacing: 0.03em;
+      margin-bottom: 45px;
+      z-index: 6;
+    }
+
+    &__social_block {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__social_link:not(:last-child) {
+      margin: 0px 0px 22px 0px;
+      z-index: 6;
+    }
+
+    &__blur_top {
+      width: 250px;
+      height: 250px;
+      filter: blur(100px);
+      transform: rotate(6deg);
+      @include position(-17px, -89px, 0px, 0px);
+      z-index: 1;
+    }
+
+    &__blur_middle {
+      width: 238px;
+      height: 340px;
+      filter: blur(100px);
+      transform: rotate(6deg);
+      @include position(761px, 248px, 0px, 0px);
+      z-index: 1;
+    }
+  }
+
+}
+
+.subtitle__section {
+  z-index: 6;
+}

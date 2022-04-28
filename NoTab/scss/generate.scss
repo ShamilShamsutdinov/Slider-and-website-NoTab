@@ -1,0 +1,275 @@
+.generate {
+  margin-bottom: 169px;
+
+  .container__content {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  &__background {
+    &_blockone {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 127px;
+    }
+
+    &_blocktwo {
+      display: flex;
+      justify-content: space-between;
+    }
+  }
+
+  &__notab_1 {
+    background-image: url(../images/NOTAB1.svg);
+    background-repeat: no-repeat;
+    width: 717px;
+    height: 164px;
+  }
+
+  &__notab_2 {
+    background-image: url(../images/NOTAB2.svg);
+    background-repeat: no-repeat;
+    width: 618px;
+    height: 164px;
+  }
+
+  &__notab_3 {
+    background-image: url(../images/NOTAB3.svg);
+    background-repeat: no-repeat;
+    width: 466px;
+    height: 164px;
+    margin-top: 42px;
+  }
+
+  &__notab_4 {
+    background-image: url(../images/NOTAB4.svg);
+    background-repeat: no-repeat;
+    width: 471px;
+    height: 164px;
+  }
+
+  &__content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: -600px;
+
+    &_img {
+      margin: 0px 129px 0px 304px;
+      z-index: 3;
+    }
+
+    &_blur {
+      position: absolute;
+      background-image: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%), url(../images/NotabBlur.svg);
+      width: 1000px;
+      height: 952px;
+      opacity: 0.15;
+      border-radius: 456px;
+      transform: rotate(0deg);
+      @include position(-26%, 17%, 0px, 0px);
+      filter: blur(60px);
+      z-index: 1;
+    }
+
+    &_item {
+      position: relative;
+      max-width: 300px;
+      padding-top: 285px;
+
+      &_arrow {
+        position: absolute;
+        background-image: url(../images/Arrow.svg);
+        background-repeat: no-repeat;
+        @include position(200px, -78px, 0px, 0px);
+        width: 100px;
+        height: 74px;
+        z-index: 3;
+      }
+
+      &_scan {
+        @include fonts('Montserrat-Bold', 21px, 26px, 700, $white);
+        z-index: 6;
+      }
+
+    }
+  }
+
+  &__block_text {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 79px;
+  }
+
+  &__block_title {
+    max-width: 381px;
+  }
+
+  &__block_subtitle {
+    max-width: 300px;
+    padding-bottom: 21px;
+  }
+
+  @media(max-width: 1024px) {
+    &__content_img {
+      margin: 0px 129px 0px 32%;
+      z-index: 3;
+    }
+  }
+
+  @media(max-width: 768px) {
+    .container__content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__notab_3 {
+      margin-top: 0px;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0px;
+
+      &_img {
+        margin: 0px;
+      }
+
+    }
+
+    &__block_text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 0px;
+      margin: -420px 0px 49px 0px;
+    }
+
+    &__block_subtitle {
+      max-width: 275px;
+    }
+
+    &__content_item {
+      max-width: 310px;
+      padding: 105px 0px 0px 176px;
+    }
+
+    &__content_item_scan {
+      @include fonts('Montserrat-Bold', 18px, 22px, 700, $white);
+    }
+
+    &__content_item_arrow {
+      @include position(15%, 84%, 0px, 0px);
+      transform: rotate(38deg);
+    }
+  }
+
+  @media(max-width:480px) {
+    & {
+      margin-bottom: 114px;
+    }
+
+    .container__content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__background {
+      padding-top: 275px;
+
+      &_blockone {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 0px;
+      }
+
+      &_blocktwo {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    &__notab_1 {
+      background-image: url(../images/NOTAB1Mobile.svg);
+      background-repeat: no-repeat;
+      width: 175px;
+      height: 44px;
+    }
+
+    &__notab_2 {
+      background-image: url(../images/NOTAB2Mobile.svg);
+      background-repeat: no-repeat;
+      width: 163px;
+      height: 44px;
+    }
+
+    &__notab_3 {
+      background-image: url(../images/NOTAB3Mobile.svg);
+      background-repeat: no-repeat;
+      width: 177px;
+      height: 44px;
+      margin-top: 42px;
+    }
+
+    &__notab_4 {
+      background-image: url(../images/NOTAB4Mobile.svg);
+      background-repeat: no-repeat;
+      width: 129px;
+      height: 44px;
+      margin-top: 26px;
+    }
+
+    &__content_blur {
+      width: 306px;
+      height: 285px;
+      opacity: 0.15;
+      @include position(45px, 18px, 0px, 0px);
+
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 0px;
+
+      &_img {
+        margin: 0px;
+      }
+
+    }
+
+    &__block_text {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      padding: 0px;
+      margin: -420px 0px 49px 0px;
+    }
+
+    &__block_subtitle {
+      max-width: 275px;
+    }
+
+    &__content_item {
+      max-width: 310px;
+      padding: 64px 0px 0px 176px;
+    }
+
+    &__content_item_scan {
+      @include fonts('Montserrat-Bold', 18px, 22px, 700, $white);
+    }
+
+    &__content_item_arrow {
+      @include position(-32px, 237px, 0px, 0px);
+      transform: rotate(38deg);
+    }
+
+
+  }
+}

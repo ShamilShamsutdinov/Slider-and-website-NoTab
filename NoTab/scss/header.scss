@@ -1,0 +1,73 @@
+.header {
+  &__container {
+    padding-left: 85px;
+  }
+
+  &__content {
+    padding-top: 26px;
+    display: flex;
+  }
+
+  &__block_logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 8px;
+    width: 294px;
+  }
+
+  &__block_login {
+    display: flex;
+    justify-content: space-between;
+    width: 90px;
+  }
+
+  &__login {
+    font-family: 'Noto-Sans';
+    font-size: 19px;
+    line-height: 25px;
+    text-decoration: none;
+    color: white;
+    border-bottom: 1px solid #fff;
+
+    &:hover {
+      color: $hover;
+      border-bottom: 1px solid $hover;
+    }
+  }
+
+  @media(max-width:480px) {
+    & {
+      margin-bottom: 65px;
+    }
+
+    &__container {
+      max-width: 375px;
+      margin: 0 auto;
+      padding: 0 15px;
+    }
+
+    &__content {
+      padding-top: 39px;
+    }
+
+    &__block_logo {
+      align-items: center;
+      padding-top: 6px;
+      margin-left: 4px;
+    }
+
+    &__login {
+      @include fonts('Noto-Sans', 14px, 19px, 400, $white);
+      border-bottom: 1px solid $white;
+    }
+
+    &__login_img {
+      display: none;
+    }
+
+    &__block_login {
+      width: auto;
+    }
+  }
+}

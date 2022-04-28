@@ -1,0 +1,115 @@
+.footer {
+  position: relative;
+  padding-bottom: 85px;
+
+
+  &__blur {
+    position: absolute;
+    background-image: linear-gradient(12.08deg, #F101BF 2.82%, #0066FF 97.06%), url(../images/touchBlurTop.svg);
+    background-repeat: no-repeat;
+    width: 400px;
+    height: 309px;
+    opacity: 0.3;
+    filter: blur(110px);
+    transform: rotate(6deg);
+    @include position(-76px, -24px, 0px, 0px);
+    z-index: 1;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+  &__block_contacts {
+    display: flex;
+    flex-direction: column;
+    max-width: 262px;
+    z-index: 6;
+  }
+
+  &__contacts_title {
+    margin-bottom: 18px;
+  }
+
+  &__contacts_link {
+    @include fonts('Avenir-Medium', 18px, 25px, 500, $white);
+    margin-bottom: 14px;
+    text-decoration: none;
+
+    &:hover {
+      color: #0066FF;
+    }
+
+  }
+
+  &__contacts_age {
+    @include fonts('Avenir-Heavy', 18px, 25px, 800, $white);
+  }
+
+  &__block_privacy_police {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__privacy_use {
+    @include fonts('Avenir-Heavy', 18px, 25px, 800, $white);
+    margin-bottom: 25px;
+    text-decoration: none;
+
+    &:hover {
+      color: #0066FF;
+    }
+  }
+
+  &__privacy_police {
+    @include fonts('Avenir-Heavy', 18px, 25px, 800, $white);
+    text-decoration: none;
+
+    &:hover {
+      color: #0066FF;
+    }
+  }
+
+  @media(max-width: 480px) {
+    &__blur {
+      width: 187px;
+      height: 215px;
+      filter: blur(50px);
+      transform: rotate(6deg);
+      @include position(63px, -73px, 0px, 0px);
+    }
+
+    &__content {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    &__block_privacy_police {
+      margin-bottom: 58px;
+    }
+
+    &__privacy_use {
+      margin-bottom: 14px;
+    }
+
+    &__block_contacts {
+      max-width: 265px;
+      align-items: center;
+    }
+
+    &__contacts_link {
+      @include fonts('Avenir-Medium', 14px, 19px, 500, $white);
+      margin-bottom: 2px;
+
+
+    }
+
+    &__contacts_age {
+      @include fonts('Avenir-Heavy', 14px, 19px, 800, $white);
+    }
+
+
+  }
+}

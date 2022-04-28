@@ -1,0 +1,232 @@
+.code {
+  margin-bottom: 146px;
+
+  .container__content {
+    padding-right: 50px;
+  }
+
+  &__block_logo {
+    display: flex;
+    justify-content: end;
+    margin-bottom: -54px;
+  }
+
+  &__logo {
+    position: absolute;
+    @include position(-636px, 567px, 0px, 0px);
+    z-index: 6;
+  }
+
+  &__background {
+    display: flex;
+    overflow: hidden;
+    z-index: 1;
+
+    &_dj {
+      background-image: linear-gradient(179.83deg, #000000 -3.1%, rgba(0, 0, 0, 0) 56.76%, #000000 83.92%), url(../images/DJ.jpg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 848px;
+      height: 617px;
+    }
+
+    &_coctail {
+      background-image: url(../images/coctail.jpg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      width: 693px;
+      height: 617px;
+      margin-top: -7px;
+    }
+  }
+
+  &__container {
+    padding-left: 81px;
+  }
+
+  &__content {
+    display: flex;
+
+    &_text {
+      max-width: 377px;
+      margin: -86px 81px 0px 0px;
+    }
+
+    &_img {
+      display: flex;
+      position: relative;
+    }
+  }
+
+  &__text {
+    margin-right: 33px;
+  }
+
+  &__social {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 57px;
+
+    &_link:hover {
+      background-color: $hover;
+      border-radius: 10px;
+    }
+  }
+
+  &__img_scanphone {
+    margin: -404px 80px 0px 0px;
+
+  }
+
+  &__img_viewphone {
+    margin-top: -63px;
+  }
+
+  &__logo_mobile {
+    display: none;
+  }
+
+  @media(max-width: 1200px) {
+    & {
+      margin-bottom: 300px;
+    }
+
+    &__container {
+      padding-left: 0px;
+    }
+
+    &__content {
+      flex-direction: column;
+      margin-top: -40%;
+      align-items: center;
+
+      &_text {
+        text-align: center;
+      }
+
+      &_img {
+        padding-top: 20%;
+      }
+    }
+
+    &__text {
+      margin-right: 0px;
+    }
+
+    &__img_scanphone {
+      margin: -15% 80px 0px 0px;
+
+    }
+
+    &__logo {
+      top: -60%;
+    }
+  }
+
+  @media(max-width: 768px) {
+    &__logo {
+      left: 68%;
+    }
+
+    &__content_text {
+      max-width: 500px;
+      margin: -80px 0px 0px 0px;
+    }
+  }
+
+  @media(max-width: 480px) {
+    & .container__content {
+      padding-right: 15px;
+    }
+
+    &__container {
+      padding: 0px;
+    }
+
+    &__logo {
+      @include position(123px, 23px, 0px, 0px);
+    }
+
+    &__logo_mobile {
+      margin: 0px 211px 43px 0px;
+      z-index: 6;
+    }
+
+    &__background {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__background_dj {
+      background-image: linear-gradient(179.83deg, #000000 -3.1%, rgba(0, 0, 0, 0) 56.76%, #000000 83.92%), url(../images/DjMobile.jpg);
+      background-size: contain;
+      width: 416px;
+      height: 335px;
+      margin-bottom: 0px;
+
+    }
+
+    &__background_coctail {
+      background-image: linear-gradient(179.83deg, #000000 -3.1%, rgba(0, 0, 0, 0) 56.76%, #000000 83.92%), url(../images/coctailMobile.png);
+      background-size: contain;
+      width: 352px;
+      height: 257px;
+      margin: 260px 0px 0px 63px;
+
+
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+      margin-top: -629px;
+    }
+
+    &__content_text {
+      margin: 0px 0px 0px 0px;
+      max-width: 350px;
+    }
+
+    &__text {
+      margin-right: 35px;
+
+    }
+
+    &__social {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 50px;
+
+      &_link {
+        margin-bottom: 21px;
+      }
+
+      &_link:hover {
+        background-color: $hover;
+        border-radius: 10px;
+      }
+
+
+    }
+
+
+    &__content_img {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding-top: 218px;
+    }
+
+    &__img_scanphone {
+      margin: 0px 0px 48px 0px;
+
+    }
+
+    &__img_viewphone {
+      margin-top: 0px;
+    }
+
+  }
+}

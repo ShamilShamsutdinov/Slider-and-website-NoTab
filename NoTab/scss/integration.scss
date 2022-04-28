@@ -1,0 +1,177 @@
+.integration {
+  padding-top: 199px;
+  margin-bottom: 185px;
+
+  &__content {
+    display: flex;
+
+    &_text {
+      max-width: 511px;
+      margin: 90px 0px 283px 0px;
+    }
+
+    &_img {
+      position: relative;
+    }
+  }
+
+  &__title {
+    margin-bottom: 33px;
+  }
+
+  &__text {
+    margin-right: 129px;
+    text-align: start;
+  }
+
+  &__absolute {
+    position: absolute;
+  }
+
+  &__blackgraf {
+    @include position(0px, 323px, 0px, 0px);
+  }
+
+  &__percentgraf {
+    @include position(183px, 447px, 0px, 0px);
+    z-index: 0;
+  }
+
+  &__bluegraf {
+    @include position(251px, 11px, 0px, 0px);
+  }
+
+  &__pillargraf {
+    @include position(395px, 192px, 0px, 0px);
+    z-index: 0;
+  }
+
+  &__shadowgraf {
+    @include position(293px, 266px, 0px, 0px);
+    z-index: 0;
+  }
+
+  &__circle {
+    display: flex;
+    justify-content: space-between;
+    width: 233px;
+    @include position(185px, 143px, 0px, 0px);
+
+
+    &_size {
+      width: 45px;
+      height: 45px;
+    }
+  }
+
+  &__percent {
+    display: flex;
+    justify-content: space-between;
+    width: 281px;
+    @include position(467px, 434px, 0px, 0px);
+
+    &_size {
+      width: 56px;
+      height: 56px;
+    }
+  }
+
+  @media(max-width: 1024px) {
+    & {
+      margin-bottom: 600px;
+      padding-top: 100px;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+
+      &_text {
+        max-width: 495px;
+        margin: 90px 0px 50px 0px;
+      }
+    }
+  }
+
+  @media(max-width:768px) {
+
+    &__content_text {
+      max-width: 500px;
+      text-align: center;
+      align-items: center;
+      margin-left: 13%;
+    }
+
+    &__text {
+      margin-right: 0px;
+
+    }
+  }
+
+  @media(max-width:480px) {
+    & {
+      padding-top: 51px;
+      margin-bottom: 315px;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column;
+    }
+
+    &__content_text {
+      margin: 90px 0px 0px 0px;
+    }
+
+    &__title {
+      margin-bottom: 24px;
+    }
+
+    &__text {
+      margin-right: 0px;
+    }
+
+    &__content_img {
+      position: relative;
+      max-width: 400px;
+    }
+
+    &__bluegraf {
+      display: none;
+    }
+
+
+    &__blackgraf {
+      @include position(158px, -15px, 0px, 0px);
+    }
+
+    &__percentgraf {
+      @include position(30px, 264px, 0px, 0px);
+      z-index: 0;
+    }
+
+    &__pillargraf {
+      @include position(126px, 119px, 0px, 0px);
+      z-index: 0;
+    }
+
+    &__shadowgraf {
+      @include position(66px, 178px, 0px, 0px);
+      z-index: 0;
+    }
+
+    &__circle {
+      width: 117px;
+      @include position(83px, 21px, 0px, 0px);
+    }
+
+    &__percent {
+      width: 214px;
+      @include position(217px, 149px, 0px, 0px);
+
+      :nth-child(4) {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,60 @@
+.container {
+    max-width: 1230px;
+    padding: 20px 15px 0px 15px;
+    background: #c0c0c0;
+    margin: 0 auto;
+}
+
+.span {
+    width: 200px;
+    display: flex;
+    margin: 0 auto;
+
+}
+
+.span-item {
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
+    border-radius: 50px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.span-item--green {
+    background-color: green;
+}
+
+h1 {
+    display: flex;
+    justify-content: center;
+    font-size: 36px;
+}
+
+button {
+    font-size: 20px;
+
+    color: black;
+    background: #FFEFD5;
+    border-radius: 10px;
+    border: none;
+    padding: 17px 30px 17px 30px;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+}
+
+.slider {
+    border: 2px solid black;
+    max-width: 52%;
+    margin: 20px auto;
+    overflow: hidden;
+}
+
+.slider-line {
+    position: relative;
+    display: flex;
+    left: 0px;
+
+
+}

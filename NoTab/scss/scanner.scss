@@ -1,0 +1,97 @@
+.scanner {
+  background-image: linear-gradient(179.83deg, #000000 -3.1%, rgba(0, 0, 0, 0) 56.76%, #000000 83.92%), url(../images/barmen.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  padding-top: 442px;
+
+  &__content {
+    display: flex;
+    align-items: flex-end;
+
+    &_img {
+      display: flex;
+      margin-right: 130px;
+    }
+
+    &_text {
+      max-width: 320px;
+      margin-bottom: 72px;
+    }
+
+  }
+
+  &__img {
+    max-width: 331px;
+    border-radius: 53px;
+
+    &:first-child {
+      margin-right: 52px;
+
+    }
+  }
+
+  @media(max-width: 1100px) {
+    &__content {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: flex-start;
+    }
+  }
+
+  @media(max-width: 768px) {
+    & {
+      background-image: linear-gradient(179.83deg, #000000 -3.1%, rgba(0, 0, 0, 0) 12.76%, #000000 83.92%), url(../images/barmen.jpg);
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+
+      &_img {
+        margin: 0px;
+      }
+
+      &_text {
+        max-width: 540px;
+        text-align: center;
+      }
+    }
+
+
+
+
+  }
+
+  @media(max-width: 480px) {
+    & {
+      background-image: linear-gradient(98.83deg, #000000 -8.85%, rgba(0, 0, 0, 0.67) -0.79%, rgba(0, 0, 0, 0) 54.71%, #000000 83.92%), url(../images/barmenMobile.jpg);
+      background-repeat: no-repeat;
+      padding-top: 227px;
+    }
+
+    &__content {
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+
+    &__content_img {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      margin-right: 0px;
+    }
+
+    &__img {
+      &:first-child {
+        margin: 0px 0px 55px 0px;
+
+      }
+    }
+
+    &__content_text {
+      max-width: 345px;
+    }
+  }
+}
